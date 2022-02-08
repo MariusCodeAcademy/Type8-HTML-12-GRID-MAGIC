@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
+@import 'reset.css';
+@import 'common.css';
+
+body {
+  background-color: #333;
+  margin-bottom: 100px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  font-size: 100px;
+  font-weight: 300;
+}
+
+/* header */
+.header {
+  z-index: 5;
+  background-color: transparent;
+  color: snow;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid snow;
+}
+
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-item {
+  padding: 8px 16px;
+  display: inline-block;
+}
+
+/* hero */
+
+.hero {
+  background: url('../img/header.jpg') no-repeat;
+  background-size: cover;
+  /* padding-top: 200px;
+  padding-bottom: 200px; */
+  text-align: center;
+  min-height: 100vh;
+  position: relative;
+}
+.hero-text-container {
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  transform: translate(-50%, -50%);
+  position: absolute;
+  color: snow;
+  /* border: 1px solid #000; */
+}
