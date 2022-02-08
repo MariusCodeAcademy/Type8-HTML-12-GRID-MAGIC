@@ -23,7 +23,7 @@
   color: white;
   display: grid;
   gap: 16px;
-  grid-template-columns: 1.3fr 1fr 1fr 1fr;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
   grid-template-areas:
     'about quick free social'
     'about form form form'
