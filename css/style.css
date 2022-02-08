@@ -36,23 +36,22 @@ h1 {
   display: inline-block;
 }
 
-/* hero */
+/*  Grid */
 
-.hero {
-  background: url('../img/header.jpg') no-repeat;
-  background-size: cover;
-  /* padding-top: 200px;
-  padding-bottom: 200px; */
-  text-align: center;
-  min-height: 100vh;
-  position: relative;
+.grid-1 {
+  grid-column: 1 / span 2;
 }
-.hero-text-container {
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  transform: translate(-50%, -50%);
-  position: absolute;
-  color: snow;
-  /* border: 1px solid #000; */
+.grid-3 {
+  grid-row: 2 / span 2;
+}
+
+.grid-container {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+}
+.grid-item {
+  padding: 15px 30px;
+  background-color: tomato;
+  border: 1px solid #000;
 }
