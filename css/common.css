@@ -3,3 +3,9 @@
   margin: 0 auto;
   /* padding: 0 50px; */
 }
+
+p,
+li,
+a {
+  font-size: 16px;
+}

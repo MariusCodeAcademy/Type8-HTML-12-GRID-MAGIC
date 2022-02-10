@@ -39,19 +39,24 @@
 }
 
 .grid-item > h4 {
-  margin-bottom: 20px;
+  margin-bottom: 1.5rem;
+  font-size: 20px;
+  font-weight: normal;
 }
 
-@media (max-width: 500px) {
-  /* css skirtas nuo 0 iki 500px */
+@media (max-width: 768px) {
+  /* css skirtas nuo 0 iki 768px */
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
   .footer-grid {
     /* display: flex;
     flex-flow: column; */
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr 1fr;
     grid-template-areas:
-      'about quick'
-      'form form'
-      'free social'
-      'bottom bottom';
+      'about quick free'
+      'form form social'
+      'bottom bottom bottom';
   }
 }
